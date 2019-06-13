@@ -1,0 +1,18 @@
+ zuul:
+#  ignoredServices: '*'
+  routes:
+   users:
+    path: /book
+    url: http://localhost:8080/
+  SendErrorFilter:
+   post:
+    disable: true
+  SendResponseFilter:
+   post:
+    disable: true
+
+ server:
+  port: 8090
+
+ error:
+  path: /error
